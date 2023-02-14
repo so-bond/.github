@@ -1,7 +1,7 @@
 # Sustainable & Open | Bond - open source contribution
 
 
-From the [Compliant Architecture for Security Tken  / CAST](https://www.cast-framework.com/wp-content/uploads/2021/05/CAST-White-Paper-1.0_Final_17-05-2021.pdf) proposed by Société Générale Forge in May 2021 and following a joint effort of Crédit Agricole CIB (CACIB) and Skandinaviska Enskilda Banken (SEB) to propose a modular bond issuance model on DLT, CACIB and SEB propose to extend the CAST framework with `so|bond` (Sustainable & Open model for bonds)
+From the [Compliant Architecture for Security Token  / CAST](https://www.cast-framework.com/wp-content/uploads/2021/05/CAST-White-Paper-1.0_Final_17-05-2021.pdf) proposed by Société Générale Forge in May 2021 and following a joint effort of Crédit Agricole CIB (CACIB) and Skandinaviska Enskilda Banken (SEB) to propose a modular bond issuance model on DLT, CACIB and SEB propose to extend the CAST framework with `so|bond` (Sustainable & Open model for bonds)
 
 Rather than theorizing the model `so|bond` proposes an implementation of smart contracts under the Ethereum Virtual Machine (EVM) de-facto standard and release the source code of its implementation in [sc-bonds](../sc-bonds/README.md)
 
@@ -48,8 +48,8 @@ Referring to CAST Framework at chapter 2 section 1 we adjust the definitions to 
 |**Calculation Agent** |no change |
 |**Settlement Agent** | also Paying Agent. Acts for the cash settlement of coupon and redemption. But does not intervene in the payment against securities|
 |**Custodian** |no change. they are typically the Security Token holders directly with the Registrar in a nominative administered bond.  |
-|**Issuance Facility Operator** | not a formal role in the `so|bond` model. Each role must be able to operate on the DLT directly or via a supplier but no central operator is expected.|
-|**OTC Facility Operator** |not needed in `so|bond` model. Custodian and Lead Manager are expected to deliver their order directly to the DLT in the appropriate form of satellite smart contract|
+|**Issuance Facility Operator** | not a formal role in the `so\|bond` model. Each role must be able to operate on the DLT directly or via a supplier but no central operator is expected.|
+|**OTC Facility Operator** |not needed in `so\|bond` model. Custodian and Lead Manager are expected to deliver their order directly to the DLT in the appropriate form of satellite smart contract|
 
 ## Focus on transaction management for Security Tokens
 
