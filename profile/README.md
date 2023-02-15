@@ -201,7 +201,7 @@ The Registrar will have to verify that
 
 ### Trade smart contract - generic interface
 
-In `so|bond` model the belief is that business processes will evolve rather quickly (new ideas, different cash on chain solutions, CBDC ...) and therefore transaction workflow implemented in smart contract should be replaceable. As a consequence, the `so|bond` model prefers single smart contract instance for each transaction.
+In `so|bond` model the belief is that business processes will evolve rather quickly (new ideas, different cash on chain solutions, CBDC ...) and therefore transaction workflow implemented in smart contract should be replaceable. As a consequence, the `so|bond` model prefers single smart contract instance for each transaction with a short lived process. With this approach the next trade can have a different process while still interfacing the same register. It is however possible that the transactions are managed by a factory model or even by a facade smart contract.
 
 There is the need of being able to retrieve the trades and to get their details in an homogeneous way. To do this `so|bond` proposes a common interface for trades.
 
@@ -232,7 +232,15 @@ interface ITrade {
 
 ### Primary Issuance Satellite Smart contract
 As an initial proposal in the `so|bond` model for the process of issuance, a.k.a. the first actual purchase of the securities from the issuer to the Lead Manager is executed by a PrimaryIssuance smart contract that is deployed by the Lead Manager, pointing to the register.    
-The 
+The PrimaryIssuance smart contract will follow the ITrade interface but enfore to only execute a transfer the total quantity of securities from the technical initial wallet and place it in the Lead Manager Wallet. The Registrar will verify that the smart contract verifies that it is the case and that the call is made only by the Lead Manager's wallet.    
+
+### Bilateral Trade Satellite Smart contract
+When two investors want to exchange securities they setup a new bilateral transaction represented by a smart contract that include the agreed process.
+
+For instance, taking the convention that it is always the seller that initializes the smart contract, and approves it. The buyer get notified by the `NotifyTrade` event, verifies and confirm the trade, locking the properties. The payment can be done outside of the trade and when the payment is received the seller finalizes the execution by triggering via the contract the `transferFrom()` function on the register. The Registrar will check that the code of the contract controls that both parties have to confirm the trade, and that the transfer can only be done on properties agreed by both parties.    
+Obviously in this simplistic process there is a delivery risk that comes from the lack of on-chain cash.
+
+In a more sofisticated process, the smart contract could contains reference to on-chain settlement assets (stable coins or on-chain cash accounts) without having to change anything to the register.
 
 ## Business Continuity
 
