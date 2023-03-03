@@ -15,7 +15,7 @@ There are commonalities and differences with the CAST Framework but `so|bond` ha
 ## Legal, operational and non technical preamble
 `so|bond` does not impose a legal structure yet it assumes that the law accepts that the register of a security is kept in DLT. This documentation does not dive in this field.
 
-`so|bond` however take the view that all operational actors must be independant and autonomous as much as possible to transact, decide their business workflows and custody their assets (and therefore their private keys). For this reason `so|bond` is prefering to isolate the roles in the bond issuance life cycle as much as possible (issuer, joint lead managers, billing and delivery agent, registrar - CAK in luxembourg law, custodians, investors, paying agent etc)
+`so|bond` however take the view that all operational actors must be independant and autonomous as much as possible to transact, decide their business workflows and custody their assets (and therefore their private keys). For this reason `so|bond` is prefering to isolate the roles in the bond issuance life cycle as much as possible (issuer, joint lead managers, billing and delivery agent, registrar, custodians, investors, paying agent etc)
 
 `so|bond` assumes that roles taken by the parties in a transaction, that need to operate directly in the DLT, understand that interacting with a smart contract implies that they understand the smart contract and accept its terms. In legal terms, although it has not the same value (yet), it would mean that at the first interacting with a smart contract (either by deployment or by submitting a transaction to it) the terms and conditions of the software (representing the smart contract) are deemed to be accepted. 
 
@@ -32,7 +32,7 @@ By this mechanism, the Registrar can be sure that the calling satellite smart co
 
 Note that point 2.5 2) Possibility of adapting to technological or regulatory constraints remains applicable in `so|bond`.
 
-## Roles adjustments compare to CAST
+## Roles adjustments compared to CAST
 
 Referring to CAST Framework at chapter 2 section 1 we adjust the definitions to redistribute responsibilities of the Registrar further and clarify some points:
 
