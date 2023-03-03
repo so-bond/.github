@@ -1,13 +1,16 @@
 # Sustainable & Open | Bond - open source contribution
 
+From a joint effort of Crédit Agricole CIB (CACIB) and Skandinaviska Enskilda Banken (SEB) to propose a modular bond issuance model on DLT, CACIB and SEB propose to extend the CAST framework with `so|bond` (Sustainable & Open model for bonds).   
 
-From the [Compliant Architecture for Security Token  / CAST](https://www.cast-framework.com/wp-content/uploads/2021/05/CAST-White-Paper-1.0_Final_17-05-2021.pdf) proposed by Société Générale Forge in May 2021 and following a joint effort of Crédit Agricole CIB (CACIB) and Skandinaviska Enskilda Banken (SEB) to propose a modular bond issuance model on DLT, CACIB and SEB propose to extend the CAST framework with `so|bond` (Sustainable & Open model for bonds)
+CAST is the [Compliant Architecture for Security Token](https://www.cast-framework.com/wp-content/uploads/2021/05/CAST-White-Paper-1.0_Final_17-05-2021.pdf) proposed by Société Générale Forge in May 2021.
 
 Rather than theorizing the model `so|bond` proposes an implementation of smart contracts under the Ethereum Virtual Machine (EVM) de-facto standard and release the source code of its implementation in [sc-bonds](https://github.com/so-bond/sc-bonds)
 
 So, unlike CAST, `so|bond` is not DLT agnostic and instead takes a view of a ready operational standard for the market. However, since this position can prove to be invalid at some point, the `so|bond` model remain valid under similar blockchain technologies that have smart contracts with certain attributes.
 
 There are commonalities and differences with the CAST Framework but `so|bond` has been inspired by CAST.
+
+![](../images/so-bond-marketing.png)
 
 ## Legal, operational and non technical preamble
 `so|bond` does not impose a legal structure yet it assumes that the law accepts that the register of a security is kept in DLT. This documentation does not dive in this field.
