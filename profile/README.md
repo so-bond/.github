@@ -2,7 +2,7 @@ As a preamble, the content of this publication and all attached elements are sub
 
 Authors:
 * Guénolé de Cadoudal
-* Johan Hörmak
+* Johan Hörmark
 
 
 # Sustainable & Open | Bond - open source contribution
