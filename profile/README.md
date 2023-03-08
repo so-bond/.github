@@ -7,7 +7,7 @@ Authors:
 
 # Sustainable & Open | Bond - open source contribution
 
-In a joint effort of Crédit Agricole CIB (CACIB) and Skandinaviska Enskilda Banken (SEB) to propose a modular bond issuance model on DLT, CACIB and SEB propose to extend the CAST framework with `so|bond` (Sustainable & Open model for bonds).   
+In a joint effort of Crédit Agricole CIB and Skandinaviska Enskilda Banken to propose a modular bond issuance model on DLT, they propose to extend the CAST framework with `so|bond` (Sustainable & Open model for bonds).  
 
 CAST is the [Compliant Architecture for Security Token](https://www.cast-framework.com/wp-content/uploads/2021/05/CAST-White-Paper-1.0_Final_17-05-2021.pdf) proposed by Société Générale Forge in May 2021.
 
