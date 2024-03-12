@@ -19,6 +19,8 @@ There are commonalities and differences with the CAST Framework but `so|bond` ha
 
 ![](https://github.com/so-bond/.github/raw/main/images/so-bond-marketing.png)
 
+[![YOUTUBE-PREZ](https://github.com/so-bond/.github/raw/main/images/so-bond-principles.PNG)](https://youtu.be/g7Slgx78nqw?si=9DETFamIndCVwhw8 "so|bond principles")
+
 ## Legal, operational and non technical preamble
 `so|bond` does not impose a legal structure yet it assumes that the law accepts that the register of a security is kept in DLT. This documentation does not dive in this field.
 
